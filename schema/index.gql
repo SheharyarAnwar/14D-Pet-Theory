@@ -1,0 +1,11 @@
+type Report {
+  phoneNumber: String!
+  email: String!
+  result: String!
+}
+type Query {
+  report: Report!
+}
+type Mutation {
+  addReport(phoneNumber: String!, email: String!, result: String!): Report!
+}
